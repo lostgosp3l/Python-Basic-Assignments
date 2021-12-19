@@ -1,0 +1,72 @@
+1. In the below elements which of them are values or an expression? eg:- values can be integer or string and expressions will be mathematical operators.
+Answer: *   operator
+   'hello'  value
+    -87.8   value
+        -   operator
+        /   operator
+        6   value
+
+
+2. What is the difference between string and variable?
+Answer:
+a string is a value representing text
+a variable is a name that can refer to any value
+quotes, double or single, (they mean the same, but can’t be matched with each other) are used to create string literals, the quotes are there to indicate that the text that they enclose is not code, it is a value
+
+
+3. Describe three different data types.
+Answer:In python, data types can be numeric, sequential or boolean.
+Numeric
+In Python, numeric data type represent the data which has numeric value. Numeric value can be integer, floating number or even complex numbers. These values are defined as int, float and complex class in Python.
+Integers – This value is represented by int class. It contains positive or negative whole numbers (without fraction or decimal). In Python there is no limit to how long an integer value can be.
+Float – This value is represented by float class. It is a real number with floating point representation. It is specified by a decimal point. Optionally, the character e or E followed by a positive or negative integer may be appended to specify scientific notation.
+Complex Numbers – Complex number is represented by complex class. It is specified as (real part) + (imaginary part)j. For example – 2+3j
+Sequence Type
+In Python, sequence is the ordered collection of similar or different data types. Sequences allows to store multiple values in an organized and efficient fashion. There are several sequence types in Python –
+String
+List
+Tuple
+String
+In Python, Strings are arrays of bytes representing Unicode characters. A string is a collection of one or more characters put in a single quote, double-quote or triple quote. In python there is no character data type, a character is a string of length one. It is represented by str class.
+List
+Lists are just like the arrays, declared in other languages which is a ordered collection of data. It is very flexible as the items in a list do not need to be of the same type.
+Tuple
+Just like list, tuple is also an ordered collection of Python objects. The only difference between tuple and list is that tuples are immutable i.e. tuples cannot be modified after it is created. It is represented by tuple class.
+Boolean
+Data type with one of the two built-in values, True or False. Boolean objects that are equal to True are truthy (true), and those equal to False are falsy (false). But non-Boolean objects can be evaluated in Boolean context as well and determined to be true or false. It is denoted by the class bool.
+
+
+4. What is an expression made up of? What do all expressions do?
+Answer: Expression: An expression is a combination of operators, constants and variables. An expression may consist of one or more operands, and zero or more operators to produce a value.
+Expressions help us formulate understandable set of instructions by the computer so as to allow it to easily get converted into machine code and perform as per the code.
+
+
+5. This assignment statements, like spam = 10. What is the difference between an expression and a statement?
+Answer: A statement does something. Statements represent an action or command e.g print statements, assignment statements. Expression is a combination of variables, operations and values that yields a result value. An expression is something that can be reduced to a value, for example "1+3" or "foo = 1+3"
+
+
+6. After running the following code, what does the variable bacon contain?
+bacon = 22
+bacon + 1
+Answer: 23
+
+
+7. What should the values of the following two terms be?
+Answer: 'spam' + 'spamspam'   'spamspamspam'
+                'spam' * 3    'spamspamspam'
+
+
+8. Why is eggs a valid variable name while 100 is invalid?
+Anser: Eggs is a valid variable name as it starts with a char but 100 does not. Having a variable name start from a numerical value is an illegal variable name by design.
+
+
+9. What three functions can be used to get the integer, floating-point number, or string version of a value?
+Answer:       integer 'int'
+Floating-point number 'float'
+              String  'str'
+              
+              
+10. Why does this expression cause an error? How can you fix it?
+'I have eaten ' + 99 + ' burritos.'
+This expression produces an error because it is an illegal move to add astring to an integer and vice versa. To fix this we must convert the integer to a string by means of typecasting.
+Solution: 'I have eaten' + str(99) + 'burritos.'
