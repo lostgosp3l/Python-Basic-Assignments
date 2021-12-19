@@ -1,0 +1,111 @@
+1.What are the two values of the Boolean data type? How do you write them?
+A- there are only two Boolean values, True and False.
+
+
+2. What are the three different types of Boolean operators?
+A- Three different types of boolean operators are : AND, OR and NOT
+
+
+3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean values for the operator and what it evaluate ).
+A-
+X         Y    NOT(~X)   AND     OR
+false	false	true	false	false
+false	true	true	false	true
+true	false	false	false	true
+true	true	false	true	true
+
+
+
+4. What are the values of the following expressions?
+A-
+(5 > 4) and (3 == 5)                                   False
+not (5 > 4)                                            False
+(5 > 4) or (3 == 5)                                    True
+not ((5 > 4) or (3 == 5))                              False
+(True and True) and (True == False)                    False
+(not False) or (not True)                              True
+
+
+5. What are the six comparison operators?
+A- 
+Less than ( < )
+Less than or equal to (<=)
+Greater than (>)
+Greater than or equal to (>=)
+Equal to ( == )
+Not equal to ( != )
+
+
+
+6. How do you tell the difference between the equal to and assignment operators?Describe a condition and when you would use one.
+A-The ‘==’ operator checks whether the two given operands are equal or not. If so, it returns true. Otherwise it returns false.
+Whereas, assignment operators such as '=' and the like are used to assign a value to a variable.
+
+
+7. Identify the three blocks in this code:
+spam = 0
+if spam == 10:
+print('eggs')
+if spam > 5:
+print('bacon')
+else:
+print('ham')
+print('spam')
+print('spam')
+A-     block 1
+spam = 0
+if spam == 10:
+	print('eggs')
+	   block 2
+if spam > 5:
+	print('bacon')
+else:
+	print('ham')
+        block 3	
+print('spam')
+print('spam')
+
+
+8. Write code that prints Hello if 1 is stored in spam, prints Howdy if 2 is stored in spam, and prints Greetings! if anything else is stored in spam.
+A-
+spam = input()
+
+if spam == 1:
+    print('Hello')
+elif spam == 2:
+    print('Howdy')
+else:
+    print('Greetings!')
+
+
+9.If your programme is stuck in an endless loop, what keys you’ll press?
+A-If your programme is stuck in an endless loop, press Ctrl + C .
+
+
+10. How can you tell the difference between break and continue?
+A- When we use break, the program terminates at the condition set for breaking the loop.However in case of a continue program, the loop simply skips over the predefined condition.
+
+
+11. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+A-
+range(10) is an example of range(stop), where the number 10 isn't included. 
+range(0,10) is an example of range(start,stop) where 0 is where it starts and ends at 10 excluding 10.
+range(0,10,1) is an example of range(start, stop, step) where 0 is where it starts and ends at 10 excluding 10 by taking 1 step between iterations
+
+
+12. Write a short program that prints the numbers 1 to 10 using a for loop. Then write an equivalent program that prints the numbers 1 to 10 using a while loop.
+A-   #for loop
+     num = range(0,11)
+	 for n in num:
+		print(num)
+
+	#While loop
+	num = range(0,11)
+	n = 1
+	while n<=num:
+		print(n)
+		n = n + 1
+	 
+	 
+13. If you had a function named bacon() inside a module named spam, how would you call it after importing spam?
+A- This function can be called with spam.bacon().
