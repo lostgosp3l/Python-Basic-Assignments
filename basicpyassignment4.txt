@@ -1,0 +1,47 @@
+1. What exactly is []?
+[] is the syntactical notation for python lists.
+ List items are ordered, changeable, and allow duplicate values.
+
+2. In a list of values stored in a variable called spam, how would you assign the value 'hello' as the third value? (Assume [2, 4, 6, 8, 10] are in spam.)
+spam[2] = 'hello'
+
+Let's pretend the spam includes the list ['a', 'b', 'c', 'd'] for the next three queries.
+3. What is the value of spam[int(int('3' * 2) / 11)]?
+'d'
+4. What is the value of spam[-1]?
+'d'
+5. What is the value of spam[:2]?
+'a' 'c'
+
+
+Let's pretend bacon has the list [3.14, 'cat,' 11, 'cat,' True] for the next three questions.
+6. What is the value of bacon.index('cat')?
+1
+7. How does bacon.append(99) change the look of the list value in bacon?
+[3.14, 'cat', 11, 'cat', True, 99]
+8. How does bacon.remove('cat') change the look of the list in bacon?
+[3.14, 11, 'cat', True, 99]  #It will remove one 'cat' per execution
+
+
+9. What are the list concatenation and list replication operators?
+There are several ways to join, or concatenate, two or more lists in Python
+1. '+' operator
+2. Append()
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+for x in list2:
+  list1.append(x)
+
+print(list1)
+
+3.Extend()
+list1 = ["a", "b" , "c"]
+list2 = [1, 2, 3]
+
+list1.extend(list2)
+print(list1)
+You cannot copy a list simply by typing list2 = list1, because: list2 will only be a reference to list1, and changes made in list1 will automatically also be made in list2.
+There are ways to make a copy:
+1. copy()
+thislist = ["apple", "banana", "cherry"]
