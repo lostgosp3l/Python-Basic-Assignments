@@ -1,0 +1,59 @@
+1. What are escape characters, and how do you use them?
+Escape Characters
+To insert characters that are illegal in a string, use an escape character.
+An escape character is a backslash \ followed by the character you want to insert.
+
+2. What do the escape characters n and t stand for?
+"\t" is a tab, "\n" is a newline.
+
+3. What is the way to include backslash characters in a string?
+If you want an actual backslash in the string or regex, you have to write two: \\ 
+For example "this is a \\n new line"
+
+4. The string "Howl's Moving Castle" is a correct value. Why isn't the single quote character in the word Howl's not escaped a problem?
+Because double quotes (" ") have been used to open and close the string
+
+5. How do you write a string of newlines if you don't want to use the n character?
+Python’s print() function comes with a parameter called ‘end’. By default, the value of this parameter is ‘\n’, i.e. the new line character.
+You can end a print statement with any character/string using this parameter.
+
+6. What are the values of the given expressions?
+'Hello, world!'[1]
+'e'
+'Hello, world!'[0:5]
+'Hello,'
+'Hello, world!'[:5]
+'Hello,'
+'Hello, world!'[3:]
+'Hell'
+
+7. What are the values of the following expressions?
+'Hello'.upper()
+'HELLO'
+'Hello'.upper().isupper()
+True
+'Hello'.upper().lower()
+False
+
+8. What are the values of the following expressions?
+'Remember, remember, the fifth of July.'.split()
+['Remember,', 'remember,', 'the', 'fifth', 'of', 'July.']
+
+'-'.join('There can only one.'.split())
+'There-can-only-one.'
+
+9. What are the methods for right-justifying, left-justifying, and centering a string?
+String alignment is frequently used in many day-day applications.
+ Python in its language offers several functions that helps to align string. 
+ Also, offers a way to add user specified padding instead of blank space.
+str.ljust(s, width[, fillchar])
+str.rjust(s, width[, fillchar])
+str.center(s, width[, fillchar])
+These functions respectively left-justify, right-justify and center a string in a field of given width. 
+They return a string that is at least width characters wide, created by padding the string s with the character fillchar (default is a space) until the given width on the right, left or both sides.
+The string is never truncated.
+
+10. What is the best way to remove whitespace characters from the start or end?
+The Python String strip() method is part of the built-in function available in python.
+The function will remove given characters from the start and end of the original string.
+syntax:string.strip([characters])
