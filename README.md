@@ -1,2 +1,2 @@
-# Python-Basic-Assignments
-Basic theory assignments for ineuron
+# Python-Basic-Theory
+Notes for python interviews(ineuron)
